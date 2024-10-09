@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiUrl: 'https://api.tu-sitio.com/api'
+    apiUrl: 'https://prueba.sandboxmb.com/api/'
   };

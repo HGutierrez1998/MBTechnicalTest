@@ -2,21 +2,38 @@
 
 
 <div class="grid grid-cols-2 grid-rows-1 gap-4">
-    <div >2</div>
+    <div >
+
+        <img
+        src="auth.png"
+        alt="User Profile"
+        class="ps-10 pt-20 rounded-2xl h-full"
+      />
+    </div>
     <div class="p-32">
         <p class="text-2xl">Inicio Sesión</p>
-        <form action="">
+        <form [formGroup]="formLogin" (ngSubmit)="getAuthentication()">
             <div class="mb-4 mt-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                   Email o nombre de usuario
                 </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                <input  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                        id="username" 
+                        type="text" 
+                        formControlName="userName"
+                        autocomplete="off"
+                        placeholder="Username">
               </div>
               <div class="mb-4 mt-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                   Contraseña
                 </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                <input  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                        id="username" 
+                        type="text"
+                        formControlName="password"
+                        autocomplete="off" 
+                        placeholder="Username">
               </div>
               <div class="mb-4 mt-4">
                 <label class="inline-flex items-center cursor-pointer">
@@ -26,7 +43,9 @@
                   </label>
               </div>
               <div class="mb-4 mt-4">
-                <button type="button" class="w-11/12 focus:outline-none text-white bg-lime-300 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">
+                <button type="submit" 
+                        [disabled]="formLogin.invalid"
+                        class="w-11/12 focus:outline-none text-white bg-lime-300 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">
                     Iniciar Sesión
                 </button>
               </div>
@@ -36,7 +55,9 @@
 
               <div class="mt-20">
                 <a href="" class="text-gray-500">¿No tienes una cuenta?</a>
-                <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">REGISTRARSE</button>
+                <button type="button"
+                        (click)="register()" 
+                        class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">REGISTRARSE</button>
 
               </div>
 

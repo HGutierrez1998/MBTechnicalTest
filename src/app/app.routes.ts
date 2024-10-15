@@ -26,7 +26,7 @@ export const routes: Routes = [
                 loadComponent: () => import('./pages/user-shopping-car/user-shopping-car.component')
             },
             {
-                path: 'brand-building',
+                path: 'finish-purchase',
                 loadComponent: () => import('./pages/finish-purchase/finish-purchase.component')
             },
             {

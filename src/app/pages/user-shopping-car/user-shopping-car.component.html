@@ -1,1 +1,439 @@
-<p>user-shopping-car works!</p>
+
+<div class="grid grid-cols-1 grid-rows-1 gap-4 ps-6 my-5">
+    <div >
+        <p class="text-3xl"> Carrito de compra</p>
+    </div>
+</div>
+    
+
+<div class="grid grid-cols-4 grid-rows-1 gap-4">
+    <div class="col-span-3">
+
+
+        <div class=" flex items-center p-2 m-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-50 dark:border-gray-50">
+            <button type="button" class="rounded-full text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium  text-sm px-2 py-1 me-4 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+                <i class="fa-solid fa-arrow-left text-xs"></i>
+            </button>
+            <p class="text-lg" >Segir comprando</p>
+        </div>
+
+        <!-- CARD 1 -->
+        <div class=" p-2 m-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-50 dark:border-gray-50">
+            
+            <div class="grid grid-cols-4 grid-rows-1 gap-4">
+                <div >
+                    <img class="rounded-t-lg w-2/6 ms-14" src="to8.png" alt="product image" />
+                    <img class="rounded-t-lg w-2/6 ms-14" src="to9.png" alt="product image" />
+                </div> 
+                <div >
+                    <p>VEMO Bujía de encendido Q+, calidad de primer equipo</p>
+                    <a href="" class="text-sm text-gray-600 pt-10 me-5"> ELIMINAR  <i class="fa-regular fa-heart"></i></a>
+                </div> 
+                <div class="flex justify-center">
+                    
+                    <form class="max-w-xs mx-auto mt-5">
+                        <div class="relative flex items-center max-w-[8rem]">
+                            <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input" class="bg-gray-100 dark:bg-gray-50 dark:hover:bg-gray-600 dark:border-gray-800 hover:bg-gray-200 border border-gray-300 rounded-s-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+                                <svg class="w-3 h-3 text-gray-900 dark:text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>
+                                </svg>
+                            </button>
+                            <input  type="text"  
+                                    id="quantity-input" 
+                                    data-input-counter data-input-counter-min="1" 
+                                    data-input-counter-max="50" 
+                                    aria-describedby="helper-text-explanation" 
+                                    class="px-4 font-bold bg-gray-50 border-x-0 border-gray-300 h-11 text-center text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 dark:bg-gray-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="999" value="1" required />
+                            <button type="button" id="increment-button" data-input-counter-increment="quantity-input" class="bg-gray-100 dark:bg-gray-50 dark:hover:bg-gray-600 dark:border-gray-800 hover:bg-gray-200 border border-gray-300 rounded-e-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+                                <svg class="w-3 h-3 text-gray-900 dark:text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">10 Disponibles</p>
+                    </form>
+
+                </div>
+                <div >
+                    <p class="text-3xl m-4 font-bold">$ 250.00 MXN</p>
+                    <p class="text-gray-600 text-sm m-4" >Sin cargo por envio</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 1 -->
+        <div class=" p-2 m-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-50 dark:border-gray-50">
+            
+            <div class="grid grid-cols-4 grid-rows-1 gap-4">
+                <div >
+                    <img class="rounded-t-lg w-2/6 ms-14" src="to8.png" alt="product image" />
+                    <img class="rounded-t-lg w-2/6 ms-14" src="to9.png" alt="product image" />
+                </div> 
+                <div >
+                    <p>VEMO Bujía de encendido Q+, calidad de primer equipo</p>
+                    <a href="" class="text-sm text-gray-600 pt-10 me-5"> ELIMINAR  <i class="fa-regular fa-heart"></i></a>
+                </div> 
+                <div class="flex justify-center">
+                    
+                    <form class="max-w-xs mx-auto mt-5">
+                        <div class="relative flex items-center max-w-[8rem]">
+                            <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input" class="bg-gray-100 dark:bg-gray-50 dark:hover:bg-gray-600 dark:border-gray-800 hover:bg-gray-200 border border-gray-300 rounded-s-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+                                <svg class="w-3 h-3 text-gray-900 dark:text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>
+                                </svg>
+                            </button>
+                            <input  type="text"  
+                                    id="quantity-input" 
+                                    data-input-counter data-input-counter-min="1" 
+                                    data-input-counter-max="50" 
+                                    aria-describedby="helper-text-explanation" 
+                                    class="px-4 font-bold bg-gray-50 border-x-0 border-gray-300 h-11 text-center text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 dark:bg-gray-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="999" value="1" required />
+                            <button type="button" id="increment-button" data-input-counter-increment="quantity-input" class="bg-gray-100 dark:bg-gray-50 dark:hover:bg-gray-600 dark:border-gray-800 hover:bg-gray-200 border border-gray-300 rounded-e-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+                                <svg class="w-3 h-3 text-gray-900 dark:text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">10 Disponibles</p>
+                    </form>
+
+                </div>
+                <div >
+                    <p class="text-3xl m-4 font-bold">$ 250.00 MXN</p>
+                    <p class="text-gray-600 text-sm m-4" >Sin cargo por envio</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 1 -->
+        <div class=" p-2 m-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-50 dark:border-gray-50">
+            
+            <div class="grid grid-cols-4 grid-rows-1 gap-4">
+                <div >
+                    <img class="rounded-t-lg w-2/6 ms-14" src="to8.png" alt="product image" />
+                    <img class="rounded-t-lg w-2/6 ms-14" src="to9.png" alt="product image" />
+                </div> 
+                <div >
+                    <p>VEMO Bujía de encendido Q+, calidad de primer equipo</p>
+                    <a href="" class="text-sm text-gray-600 pt-10 me-5"> ELIMINAR  <i class="fa-regular fa-heart"></i></a>
+                </div> 
+                <div class="flex justify-center">
+                    
+                    <form class="max-w-xs mx-auto mt-5">
+                        <div class="relative flex items-center max-w-[8rem]">
+                            <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input" class="bg-gray-100 dark:bg-gray-50 dark:hover:bg-gray-600 dark:border-gray-800 hover:bg-gray-200 border border-gray-300 rounded-s-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+                                <svg class="w-3 h-3 text-gray-900 dark:text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>
+                                </svg>
+                            </button>
+                            <input  type="text"  
+                                    id="quantity-input" 
+                                    data-input-counter data-input-counter-min="1" 
+                                    data-input-counter-max="50" 
+                                    aria-describedby="helper-text-explanation" 
+                                    class="px-4 font-bold bg-gray-50 border-x-0 border-gray-300 h-11 text-center text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 dark:bg-gray-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="999" value="1" required />
+                            <button type="button" id="increment-button" data-input-counter-increment="quantity-input" class="bg-gray-100 dark:bg-gray-50 dark:hover:bg-gray-600 dark:border-gray-800 hover:bg-gray-200 border border-gray-300 rounded-e-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+                                <svg class="w-3 h-3 text-gray-900 dark:text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">10 Disponibles</p>
+                    </form>
+
+                </div>
+                <div >
+                    <p class="text-3xl m-4 font-bold">$ 250.00 MXN</p>
+                    <p class="text-gray-600 text-sm m-4" >Sin cargo por envio</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 1 -->
+        <div class=" p-2 m-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-50 dark:border-gray-50">
+            
+            <div class="grid grid-cols-4 grid-rows-1 gap-4">
+                <div >
+                    <img class="rounded-t-lg w-2/6 ms-14" src="to8.png" alt="product image" />
+                    <img class="rounded-t-lg w-2/6 ms-14" src="to9.png" alt="product image" />
+                </div> 
+                <div >
+                    <p>VEMO Bujía de encendido Q+, calidad de primer equipo</p>
+                    <a href="" class="text-sm text-gray-600 pt-10 me-5"> ELIMINAR  <i class="fa-regular fa-heart"></i></a>
+                </div> 
+                <div class="flex justify-center">
+                    
+                    <form class="max-w-xs mx-auto mt-5">
+                        <div class="relative flex items-center max-w-[8rem]">
+                            <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input" class="bg-gray-100 dark:bg-gray-50 dark:hover:bg-gray-600 dark:border-gray-800 hover:bg-gray-200 border border-gray-300 rounded-s-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+                                <svg class="w-3 h-3 text-gray-900 dark:text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16"/>
+                                </svg>
+                            </button>
+                            <input  type="text"  
+                                    id="quantity-input" 
+                                    data-input-counter data-input-counter-min="1" 
+                                    data-input-counter-max="50" 
+                                    aria-describedby="helper-text-explanation" 
+                                    class="px-4 font-bold bg-gray-50 border-x-0 border-gray-300 h-11 text-center text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 dark:bg-gray-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="999" value="1" required />
+                            <button type="button" id="increment-button" data-input-counter-increment="quantity-input" class="bg-gray-100 dark:bg-gray-50 dark:hover:bg-gray-600 dark:border-gray-800 hover:bg-gray-200 border border-gray-300 rounded-e-lg p-3 h-11 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none">
+                                <svg class="w-3 h-3 text-gray-900 dark:text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">10 Disponibles</p>
+                    </form>
+
+                </div>
+                <div >
+                    <p class="text-3xl m-4 font-bold">$ 250.00 MXN</p>
+                    <p class="text-gray-600 text-sm m-4" >Cargo por envío $234</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-start-4">
+        <div class=" p-2 m-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-50 dark:border-gray-50">
+            <p class="text-xl text-center font-bold p-2">Resumen de compra</p>
+        </div>
+
+        <div class=" p-2 m-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-50 dark:border-gray-50">
+
+            <ul class="w-full divide-y divide-gray-200 dark:divide-gray-700 p-3">
+                <li class="pb-3 sm:pb-4">
+                   <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                      <div class="flex-1 min-w-0">
+                         <p class="text-lg font-medium text-gray-900 truncate dark:text-gray-900">
+                            Subtotal
+                         </p>
+                         <p class="text-lg font-medium text-gray-900 truncate dark:text-gray-900">
+                            (4)
+                         </p>
+                         
+                      </div>
+                      <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray-900">
+                         $ 1000.00 MXN
+                      </div>
+                   </div>
+                </li>
+                <li class="py-3 sm:py-4">
+                   <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                      <div class="flex-1 min-w-0">
+                         <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-900">
+                            Envio
+                         </p>
+                         
+                      </div>
+                      <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray-900">
+                         $ 250.00 MXN
+                      </div>
+                   </div>
+                </li>
+                <li class="py-3 sm:py-4">
+                   <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                      <div class="flex-1 min-w-0">
+                         <p class="text-lg font-medium text-gray-900 truncate dark:text-gray-900">
+                            Total
+                         </p>
+                         
+                      </div>
+                      <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray-900">
+                         $ 1250.00 MXN
+                      </div>
+                   </div>
+                </li>
+             </ul>
+
+     
+     
+             <div class="grid grid-cols-1 grid-rows-1 gap-4 justify-center items-center py-3" >
+                 <div class="flex justify-center">
+                    <button type="button" class="w-40 justify-center items-center text-white bg-gray-950 hover:bg-gray-950 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-950 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Pagar</button>
+                 </div>
+             </div>
+        </div>
+
+
+        <div class="grid grid-cols-1 grid-rows-1 gap-4 justify-center items-center" >
+            <div class="flex justify-center w-full">
+               <button type="button" class="w-full  text-gray-900 bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2 dark:bg-[#D8FF00] dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+                
+                <i class="fa-solid fa-lock me-3"></i>
+                Compra 100% segura
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+<div class="grid grid-cols-1 grid-rows-1 gap-4 ps-6 my-5">
+    <div >
+        <p class="text-3xl"> Comprados juntos habitualmente</p>
+    </div>
+</div>
+    
+
+<div class="grid grid-cols-1 grid-rows-1 gap-4 ps-6 my-5">
+    <div >
+        <div class=" p-2 m-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-50 dark:border-gray-50">
+
+            <div  class="grid grid-cols-10 grid-rows-1 gap-4">
+                
+                <!-- Card 1 -->
+                <div class="col-span-2">
+                    <div class="w-full max-w-sm bg-white  dark:bg-gray-50 dark:border-gray-50">
+                        <div class="flex justify-between px-4 pt-4">
+                            <p class="text-sm" >SKU: DCATO19939</p>
+                            <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center px-4">
+                            <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="#">
+                                <img class="p-8 rounded-t-lg w-80" src="to12.png" alt="product image" />
+                            </a>
+                        </div>
+                        <div class="px-5 pb-5">
+                            <div class="flex justify-end">
+                                <span class="rounded-3xl bg-yellow-100 text-yellow-800 text-sm font-medium me-5 mb-5 px-2.5 py-0.5 dark:bg-lime-300 dark:text-gray-900">
+                                    <i class="fas fa-star"></i>
+                                    4.9
+                                </span>
+                                
+                            </div>
+                            <a href="#">
+                                <h5 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-gray-900">Carter aceite Mazda 6 2.5, 20009 a 2010 aluminio</h5>
+                            </a>
+
+                            <div class="flex items-center justify-between my-3">
+                                <span class="text-gray-500 line-through text-xs decoration-red-500"># 1,842</span>
+                            </div>
+
+                            <div class="flex items-center justify-between">
+                                <span class="text-2xl font-bold text-gray-900 dark:text-gray-900">$ 1,842</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Plus -->                
+                <div class="flex justify-center items-center col-start-3 text-4xl">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-span-2 col-start-4">
+                    <div class="w-full max-w-sm bg-white  dark:bg-gray-50 dark:border-gray-50">
+                        <div class="flex justify-between px-4 pt-4">
+                            <p class="text-sm" >SKU: DCATO19939</p>
+                            <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center px-4">
+                            <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        </div>
+                        <div class=" flex justify-center">
+                            <a href="#">
+                                <img class="p-8 rounded-t-lg w-80" src="to11.png" alt="product image" />
+                            </a>
+                        </div>
+                        <div class="px-5 pb-5">
+                            <div class="flex justify-end">
+                                <span class="rounded-3xl bg-yellow-100 text-yellow-800 text-sm font-medium me-5 mb-5 px-2.5 py-0.5 dark:bg-lime-300 dark:text-gray-900">
+                                    <i class="fas fa-star"></i>
+                                    4.9
+                                </span>
+                                
+                            </div>
+                            <a href="#">
+                                <h5 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-gray-900">Filtro Mazda 6 2.5, 20009 a 2010 aluminio</h5>
+                            </a>
+
+                            <div class="flex items-center justify-between my-3">
+                                <span class="text-gray-500 line-through text-xs decoration-red-500"># 1,842</span>
+                            </div>
+
+                            <div class="flex items-center justify-between">
+                                <span class="text-2xl font-bold text-gray-900 dark:text-gray-900">$ 1,842</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Plus -->
+                <div class="flex justify-center items-center col-start-6 text-4xl">
+                    <i class="fa-solid fa-plus"></i> 
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-span-2 col-start-7">
+                    <div class="w-full max-w-sm bg-white  dark:bg-gray-50 dark:border-gray-50">
+                        <div class="flex justify-between px-4 pt-4">
+                            <p class="text-sm" >SKU: DCATO19939</p>
+                            <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center px-4">
+                            <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="#">
+                                <img class="p-8 rounded-t-lg w-80" src="to10.png" alt="product image" />
+                            </a>
+                        </div>
+                        <div class="px-5 pb-5">
+                            <div class="flex justify-end">
+                                <span class="rounded-3xl bg-yellow-100 text-yellow-800 text-sm font-medium me-5 mb-5 px-2.5 py-0.5 dark:bg-lime-300 dark:text-gray-900">
+                                    <i class="fas fa-star"></i>
+                                    4.9
+                                </span>
+                                
+                            </div>
+                            <a href="#">
+                                <h5 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-gray-900">Escape Mazda 6 2.5, 20009 a 2010 aluminio</h5>
+                            </a>
+
+                            <div class="flex items-center justify-between my-3">
+                                <span class="text-gray-500 line-through text-xs decoration-red-500"># 1,842</span>
+                            </div>
+
+                            <div class="flex items-center justify-between">
+                                <span class="text-2xl font-bold text-gray-900 dark:text-gray-900">$ 1,842</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-span-2 col-start-9 flex justify-center items-center text-4xl" >
+                    <div class="grid grid-cols-1 grid-rows-3 gap-0">
+                        <div >
+                            <p class="text-2xl" >Precio total:</p>
+                        </div>
+                        <div >
+                            <p class="text-3xl" > $ 850.50 MXN</p>
+                        </div>
+                        <div >
+                            <button type="button" class="w-full text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-50 dark:text-gray-900 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Agregar al carrito</button>
+                        </div>
+                    </div>
+                        
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,1 +1,160 @@
-<p>brand-building works!</p>
+
+
+
+
+
+<div class="grid grid-cols-1 grid-rows-1 gap-4">
+    <div >
+        <div class="flex justify-center">
+            <p class="text-2xl" >Hola, te pedimos algunos datos para crear una cuenta de marca</p>
+        </div>
+    </div>
+    <div class="flex justify-center" >
+        
+        <div class="w-3/6 border-t-4 border-[#D8FF00] my-4 text-center"></div>
+    </div>
+</div>
+
+
+
+
+
+<div class="grid grid-cols-1 grid-rows-1 gap-4">
+    <div class="flex justify-center">
+        <form [formGroup]="formbrandBuilding" (ngSubmit)="createSeller()">
+        <div class="p-2 m-2 border border-gray-400 rounded-lg  dark:border-gray-200">
+
+            <p class="text-xl">Informacion de la empresa</p>
+
+            
+
+            <div class="grid grid-cols-3 grid-rows-1 gap-4">
+                <div >
+                    <div class="mb-5">
+                        <label for="tradeName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Nombre Comercial</label>
+                        <input  type="email" 
+                                id="tradeName" 
+                                formControlName="tradeName"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-400 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nombre Comercial" required />
+                    </div>
+                </div>
+                <div >
+                    <div class="mb-5">
+                        <label for="companyPhone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Teléfono de la empresa</label>
+                        <input  type="email" 
+                                id="companyPhone"
+                                formControlName="companyPhone" 
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-400 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Teléfono de la empresa" required />
+                    </div>
+                </div>
+                <div >
+                        <label for="fileInputCSF" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">CSF</label>
+                        <label class="bg-[#D8FF00] hover:bg-blue-700 text-gray-900 font-bold py-2 px-4 rounded cursor-pointer" id="fileInputCSF">
+                          Upload
+                          <input 
+                                    formControlName="fileInputCSF" 
+                                    type="file" 
+                                    class="hidden">
+                        </label>
+                </div>
+                <div >
+                        <label for="fileInputID" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Identificación Oficial</label>
+                        <label class="bg-[#D8FF00] hover:bg-blue-700 text-gray-900 font-bold py-2 px-4 rounded cursor-pointer" id="fileInputID">
+                          Upload
+                          <input 
+                                    formControlName="fileInputID" 
+                                    type="file" 
+                                    class="hidden">
+                        </label>
+                </div>
+            </div>
+
+    
+            <p class="text-xl mt-14">Dirección</p>
+
+            <div class="grid grid-cols-2 grid-rows-1 gap-4">
+                <div >
+                    <div class="mb-5">
+                        <label for="street" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Calle</label>
+                        <input  type="text" 
+                                id="street" 
+                                formControlName="street" 
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-400 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Calle" required />
+                    </div>
+                </div>
+                <div >
+                    <div class="mb-5">
+                        <label for="outerNumber" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Numero exterior</label>
+                        <input  type="text" 
+                                id="outerNumber" 
+                                formControlName="outerNumber"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-400 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Numero exterior" required />
+                    </div>
+                </div>
+
+                <div >
+                    <div class="mb-5">
+                        <label for="insideNumber" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Número interior</label>
+                        <input  type="text" 
+                                id="insideNumber" 
+                                formControlName="insideNumber"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-400 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Número interior" required />
+                    </div>
+                </div>
+                <div >
+                    <div class="mb-5">
+                        <label for="colony" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Colonia</label>
+                        <input  type="text" 
+                                id="colony" 
+                                formControlName="colony"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-400 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Colonia" required />
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-5 grid-rows-1 gap-4">
+                <div >
+                    <div class="mb-5">
+                        <label for="codePostal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Código Póstal</label>
+                        <input  type="text" 
+                                id="codePostal" 
+                                formControlName="codePostal"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-400 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Código Póstal" required />
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 grid-rows-1 gap-4">
+                <div>
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
+                        </div>
+                        <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Acepto los Términos y condiciones y autorizo el uso de mis datos de acuerdo a la Declaración de Privacidad.</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-start mb-6">
+                        <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
+                        </div>
+                        <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Acepto recibir información por correo. </label>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-center justify-center mb-6">
+                        <button type="submit" class="text-white bg-gray-950 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-gray-900 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Crear</button>
+                    </div>
+                </div>
+            </div>
+
+            
+                
+
+        </div>
+
+    </form>
+    </div>
+</div>
